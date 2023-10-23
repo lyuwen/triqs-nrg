@@ -17,7 +17,7 @@ RUN git clone https://github.com/TRIQS/nrgljubljana_interface nrgljubljana_inter
     mkdir nrgljubljana_interface.build && cd nrgljubljana_interface.build && \
     cmake ../nrgljubljana_interface.src -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX && \
     make  && make install && \
-    rm -rf /tmp/maxent.src /tmp/maxent.build
+    rm -rf /tmp/nrgljubljana_interface.src /tmp/nrgljubljana_interface.build
 
 ARG NB_USER=triqs
 USER $NB_USER
